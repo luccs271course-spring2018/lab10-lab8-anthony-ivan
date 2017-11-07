@@ -5,8 +5,10 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.Map;
 
 public class TestWordCounter {
+private String testFixture;
 
   // TODO complete this test class
 
@@ -15,18 +17,21 @@ public class TestWordCounter {
   @Before
   public void setUp() {
     // TODO create the SUT instance
+    testFixture = new WordCounter();
   }
 
   @After
   public void tearDown() {
     // TODO set the SUT instance to null
+    testFixture = null;
   }
 
   @Test
   public void testGetCountEmpty() {
 
     // TODO verify that the SUT initially returns an empty map
-    fail();
+    assertEquals(0,testFixture.getCount().size());
+   // fail();
 
   }
 
