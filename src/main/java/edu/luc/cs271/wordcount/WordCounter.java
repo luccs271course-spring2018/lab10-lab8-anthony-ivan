@@ -20,22 +20,20 @@ public class WordCounter {
 
   /** Creates a word counter instance based on the given map. */
   public WordCounter(final Map<String, Integer> theMap) {
-
+    // DONE
+    this.theMap = theMap;
+    size = theMap.size();
   }
 
   /** Counts the frequencies of all words in the given iterator. */
   public void countWords(final Iterator<String> words) {
 
-    // TODO for each word in the iterator, update the corresponding frequency in the map
+    // DONE for each word in the iterator, update the corresponding frequency in the map
     // HINT to do this without a conditional, use the getOrDefault method
-   String token; 
+    String token; 
     while (words.hasNext()){
       token = words.next();
-     int result = theMap.getOrDefault(token,size++);
-      
-      
-      
-     
+      theMap.put(token, theMap.getOrDefault(token,0) + 1);
     }
 
   }
