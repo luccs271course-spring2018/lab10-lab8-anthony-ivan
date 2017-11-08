@@ -34,6 +34,7 @@ public class WordCounter {
     while (words.hasNext()) {
       token = words.next();
       theMap.put(token, theMap.getOrDefault(token, 0) + 1);
+      size++;
     }
   }
 
