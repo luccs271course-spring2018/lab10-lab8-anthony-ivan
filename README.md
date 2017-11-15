@@ -15,7 +15,7 @@
 
 **Question 1**
 
-- Hash map has better performance.
+- Hash map has better performance, although it was not that noticeable.
 
 **Question 2**
 
